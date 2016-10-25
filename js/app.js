@@ -1,22 +1,24 @@
+var lang; // overall name of the language
+
 $(document).ready(function() {
 
-    function loadGrammar(name) {
-        $("#output").html("");
+    function loadGrammars() {
+        //$("#output").html("");
 
-        var grammar = tracery.createGrammar(grammars[name]);
-
-        var s = grammar.flatten("#origin#");
+        // establish the name of the language
+        var languageGrammar = tracery.createGrammar(grammars["languageDetails"]);
+        lang = languageGrammar.flatten("#title#");
 
         var div = $("<div/>", {
             class : "outputSample",
-            html : s
+            html : lang
         });
 
         $("#container").append(div);
     }
 
     setTimeout(function() {
-        loadGrammar("tester");
+        loadGrammars();
     }, 10);
 
     $('#grammarSelect').on('change', function() {
