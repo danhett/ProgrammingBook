@@ -7,8 +7,6 @@ $(document).ready(function() {
         var languageGrammar = tracery.createGrammar(grammars["languageName"]);
         LANG = languageGrammar.flatten("#title#");
         addToBook(LANG);
-
-        addToBook("<p>A definitive guide</p>")
     }
 
     setTimeout(function() {
