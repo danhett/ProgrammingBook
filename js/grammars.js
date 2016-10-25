@@ -3,9 +3,10 @@ var grammars = {
     /**
      * Defines the name and various elements of the language.
      */
-    languageDetails : {
+    languageName : {
         title : ["<h2>#scriptname##scriptmid# #scriptsuffix#</h2>"],
-        scriptname : ["Lol", "Cat", "Mega", "Tech", "Techno", "Cool"],
+        scriptname : ["#l##l#", "#l##l##l#", "#l##l##l##l#", "Base", "Assemble", "Lite"],
+        l : ["A", "B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"],
         scriptmid : ["Script", "Code", ""],
         scriptsuffix : ["201#year#", "Pro", "#num#.#num#"],
         year : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"],
